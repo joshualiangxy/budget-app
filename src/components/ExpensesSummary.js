@@ -22,8 +22,7 @@ export class ExpensesSummary extends React.Component {
     render() {
         return (
             <div>
-                <h2>Summary</h2>
-                <p>{this.message()}</p>
+                <h2>{this.message()}</h2>
             </div>
         );
     }
