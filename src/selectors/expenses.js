@@ -26,11 +26,6 @@ const getVisibleExpenses = (expenses, {
             case "name":
                 return expenseOne.description.localeCompare(expenseTwo.description);
         }
-        // sortBy === "date"
-        //     ? expenseTwo.createdAt - expenseOne.createdAt
-        //     : sortBy === "amount"
-        //         ? expenseTwo.amount - expenseOne.amount
-        //         : expenseOne.description.localeCompare(expenseTwo.description)
     });
 };
 
