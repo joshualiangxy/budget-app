@@ -5,10 +5,8 @@ import { startAddExpense } from "../actions/expenses";
 
 export class AddExpensePage extends React.Component {
 
-    addExpense = expense => {
-        this.props.startAddExpense(expense)
-            .then(() => this.props.history.push('/'));
-    };
+    addExpense = expense => this.props.startAddExpense(expense)
+        .then(() => this.props.history.push('/'));
 
     render() {
         return (

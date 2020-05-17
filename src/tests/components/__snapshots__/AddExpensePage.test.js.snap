@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should handle onSubmit 1`] = `
-<div>
-  <h2>
-    Add Expense
-  </h2>
-  <ExpenseForm
-    onSubmit={[Function]}
-  />
-</div>
-`;
-
-exports[`Should handle onSubmit 2`] = `
-<div>
-  <h2>
-    Add Expense
-  </h2>
-  <ExpenseForm
-    onSubmit={[Function]}
-  />
-</div>
-`;
-
 exports[`Should render AddExpensePage 1`] = `
 <div>
   <h2>
