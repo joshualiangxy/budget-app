@@ -3,32 +3,23 @@
 exports[`Should render 0 expenses properly 1`] = `
 <div>
   <h2>
-    Summary
-  </h2>
-  <p>
     Viewing 0 expenses
-  </p>
+  </h2>
 </div>
 `;
 
 exports[`Should render 1 expense properly 1`] = `
 <div>
   <h2>
-    Summary
-  </h2>
-  <p>
     Viewing 1 expense totalling $0.09
-  </p>
+  </h2>
 </div>
 `;
 
 exports[`Should render multiple expenses properly 1`] = `
 <div>
   <h2>
-    Summary
-  </h2>
-  <p>
     Viewing 4 expenses totalling $1.69
-  </p>
+  </h2>
 </div>
 `;

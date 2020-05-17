@@ -21,9 +21,9 @@ test("Should generate set end date action object",
     }));
 
 test("Should generate set text filter action object",
-    () => expect(setTextFilter("cock and ball torture")).toEqual({
+    () => expect(setTextFilter("rent")).toEqual({
         type: "SET_TEXT_FILTER",
-        text: "cock and ball torture"
+        text: "rent"
     }));
 
 test("Should generate set text filter action object with default",
