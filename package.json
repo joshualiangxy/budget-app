@@ -53,6 +53,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
+    "firebase-mock": "^2.3.2",
     "jest": "^26.0.1",
     "react-test-renderer": "^16.0.0",
     "webpack-dev-server": "^3.11.0"

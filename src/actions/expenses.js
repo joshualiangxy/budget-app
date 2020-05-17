@@ -31,3 +31,22 @@ export const startAddExpense = (expenseData = {}) => {
             .then(reference => dispatch(addExpense({ id: reference.key, ...expense })));
     };
 };
+
+export const setExpenses = expenses => ({
+    type: "SET_EXPENSES",
+    expenses
+});
+
+export const startSetExpenses = () => {
+    return dispatch => {
+        const expenses = [];
+        return database.ref("expenses").once("value")
+            .then(snapshot =>{
+                snapshot.forEach(child => {
+                    expenses.push({
+                        id: child.key,
+                        ...child.val()
+                    })
+                })}).then(() => dispatch(setExpenses(expenses)));
+    };
+};

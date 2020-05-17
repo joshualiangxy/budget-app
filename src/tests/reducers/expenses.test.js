@@ -68,3 +68,19 @@ test("Should not edit expense if expense not found",
         });
         expect(state).toEqual(expenses);
     });
+
+test("Should set expenses",
+    () => {
+        const initialState = [{
+            id: "123",
+            description: "Gas bills",
+            note: "gas bills",
+            amount: 12983719,
+            createdAt: 1231
+        }];
+        const state = expensesReducer(initialState, {
+            type: "SET_EXPENSES",
+            expenses
+        });
+        expect(state).toEqual(expenses);
+    });
