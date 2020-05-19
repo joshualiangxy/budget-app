@@ -1,13 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render NotFoundPage 1`] = `
-<div>
-  404 page not found - 
-  <Link
-    replace={false}
-    to="/"
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
   >
-    Home
-  </Link>
+    <h1
+      className="box-layout__title"
+    >
+      404 page not found
+    </h1>
+    <Link
+      className="button"
+      replace={false}
+      to="/"
+    >
+      Home
+    </Link>
+  </div>
 </div>
 `;
