@@ -16,7 +16,8 @@ exports[`Should render 0 expenses properly 1`] = `
       />
        
       <span>
-         totalling 
+         
+        totalling 
         <span
           className="bold"
         />
@@ -53,7 +54,8 @@ exports[`Should render 1 expense properly 1`] = `
       />
        
       <span>
-         totalling 
+         
+        totalling 
         <span
           className="bold"
         />
@@ -90,7 +92,8 @@ exports[`Should render multiple expenses properly 1`] = `
       />
        
       <span>
-         totalling 
+         
+        totalling 
         <span
           className="bold"
         />
