@@ -6,7 +6,9 @@ import expenses from "../fixtures/expenses";
 
 let wrapper;
 
-beforeEach(() => wrapper = shallow(<ExpenseForm />));
+beforeEach(() => {
+    wrapper = shallow(<ExpenseForm />);
+});
 
 test("Should render ExpenseForm",
     () => {
@@ -22,6 +24,18 @@ test("Should render ExpenseForm with expense date",
 test("Should render error for invalid form submission",
     () => {
         expect(wrapper).toMatchSnapshot();
+        wrapper.find("form").simulate("submit", { preventDefault: () => { } });
+        expect(wrapper.state("error")).toBeDefined();
+        expect(wrapper).toMatchSnapshot();
+    });
+
+test("Should render error for invalid amount submission",
+    () => {
+        expect(wrapper).toMatchSnapshot();
+        wrapper.setState({
+            description: "apples",
+            amount: "99999999999999999999"
+        });
         wrapper.find("form").simulate("submit", { preventDefault: () => { } });
         expect(wrapper.state("error")).toBeDefined();
         expect(wrapper).toMatchSnapshot();

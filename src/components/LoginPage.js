@@ -2,18 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../actions/auth";
 
-export class LoginPage extends React.Component {
-
-    startLogin = () => this.props.startLogin();
-
-    render() {
-        return (
-            <div>
-                <button onClick={this.startLogin}>Login</button>
-            </div>
-        );
-    }
-}
+export const LoginPage = props => (
+    <div className="box-layout">
+        <div className="box-layout__box">
+            <h1 className="box-layout__title">Expensify</h1>
+            <p>Let's control your expenses</p>
+            <button
+                onClick={props.startLogin}
+                className="button"
+            >Login with Google</button>
+        </div>
+    </div>
+);
 
 const mapDispatchToProps = dispatch => ({
     startLogin: () => dispatch(startLogin())
