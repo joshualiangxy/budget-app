@@ -1,22 +1,22 @@
-import moment from "moment";
+import moment from 'moment';
 
 export const filters = {
-    text: "",
-    sortBy: "date",
-    startDate: undefined,
-    endDate: undefined
+  text: '',
+  sortBy: 'date',
+  startDate: undefined,
+  endDate: undefined,
 };
 
 export const altFilters = {
-    text: "bills",
-    sortBy: "amount",
-    startDate: moment(0),
-    endDate: moment(0).add(3, 'd')
+  text: 'bills',
+  sortBy: 'amount',
+  startDate: moment(0),
+  endDate: moment(0).add(3, 'd'),
 };
 
 export const altFiltersName = {
-    text: "bills",
-    sortBy: "name",
-    startDate: moment(0),
-    endDate: moment(0).add(3, 'd')
+  text: 'bills',
+  sortBy: 'name',
+  startDate: moment(0),
+  endDate: moment(0).add(3, 'd'),
 };
