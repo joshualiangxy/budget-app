@@ -38,7 +38,7 @@ test('Should render error for invalid amount submission', () => {
 });
 
 test('Should set description on input change', () => {
-  const value = 'Peepee';
+  const value = 'nono';
   expect(wrapper).toMatchSnapshot();
   wrapper.find('input').at(0).simulate('change', {
     target: {
