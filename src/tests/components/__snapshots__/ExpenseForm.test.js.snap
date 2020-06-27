@@ -1589,7 +1589,7 @@ exports[`Should set description on input change 2`] = `
     onChange={[Function]}
     placeholder="Description"
     type="text"
-    value="Peepee"
+    value="nono"
   />
   <input
     className="text-input"
